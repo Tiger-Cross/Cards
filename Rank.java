@@ -24,7 +24,11 @@ public enum Rank {
     return rank;
   }
 
-  public boolean equals(){}
+  public boolean equals(Rank rank) {
+    return this.ordinal() == rank.ordinal();
+  }
 
-  public boolean lessThan(){}
+  public boolean lessThan(Rank rank){
+    return this.ordinal() < rank.ordinal();
+  }
 }
